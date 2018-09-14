@@ -1,14 +1,14 @@
 # FullStackJSExamNotes
 Notes and code pieces to use for the exam
 
-##Period-1 Vanilla JavaScript, es2015/15.., Node.js, Babel + Webpack and TypeScript
+## Period-1 Vanilla JavaScript, es2015/15.., Node.js, Babel + Webpack and TypeScript
 
 #### Explain and Reflect:
 - Explain differences between Java and JavaScript. You should include both topics related to the fact that Java is a compiled language and JavaScript a scripted language, and general differences in language features.
     
-        JavaScript is dynamicly typed, and is a functional scripting/programming language where you can use a function as a parameter. JavaScript is “the” scripting language to use in web development, where as Java is mostly used for backends, and IoT. Java is statically typed.
-        Java needs to be compiled(to machine lang in the Virtual Machine), where as JavaScript is text based and does not need compilation.
-        Java has block based scoping, where JS har function based scoping.
+JavaScript is dynamicly typed, and is a functional scripting/programming language where you can use a function as a parameter. JavaScript is “the” scripting language to use in web development, where as Java is mostly used for backends, and IoT. Java is statically typed.
+Java needs to be compiled(to machine lang in the Virtual Machine), where as JavaScript is text based and does not need compilation.
+Java has block based scoping, where JS har function based scoping.
 
 - Explain the two strategies for improving JavaScript: ES6 (es2015) + ES7, versus Typescript. What does it require to use these technologies: In our backend with Node and in (many different) Browsers
         
@@ -33,5 +33,5 @@ Notes and code pieces to use for the exam
 
     [webpack guide](https://webpack.js.org/guides/getting-started/)
 
-    
+
 - Explain the purpose of “use strict” and Linters, exemplified with ESLint 
