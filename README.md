@@ -33,11 +33,14 @@ Notes and code pieces to use for the exam
 *Coding example : BabelWebpack*
 ---
 - Explain the purpose of “use strict” and Linters, exemplified with ESLint 
->Linting is the process of checking the source code for Programmatic as well as Stylistic errors. This is most helpful in identifying some common and uncommon mistakes that are made during coding. ESLint, helps developers, when coding by showing typing mistakes, and scoping errors and such, before runtime, and Throw them as errors or underline errors with red. This helps you to remember to define variables, and not trying to do things that are not possible, as setting a variable that is `readonly` to a new value. It also helps you to not use the reserved keywords of JS as variable names and such.
-
+>Linting is the process of checking the source code for Programmatic as well as Stylistic errors. This is most helpful in identifying some common and uncommon mistakes that are made during coding. ESLint, helps developers, when coding by showing typing mistakes, and scoping errors and such, before runtime, and Throw them as errors or underline errors with red. This helps you to remember to define variables, and not trying to do things that are not possible, as setting a variable that is `readonly` to a new value. It also helps you to not use the reserved keywords of JS as variable names and such. JS modules that are exported in Node.js enviroment are automatically envoked as "use strict".
+*Coding example: useStrict.js*
 ---
+
 #### Explain using sufficient code examples the following features in JavaScript. 
 - Variable/function-Hoisting
+>Function declarations are completely hoisted ,but `var` declarations(NOT `const` and `let`) are also hoisted, but not assignments made with them. This meaning that all var declarations in your code and all function declarations will be lifted up and executed as the first thing in your code. And then afterwards when the code is executing the variables, and functions will be declared values.
+*Coding example: hoisting.js*
 
 ---
 - *this* in JavaScript and how it differs from what we know from Java/.net.
@@ -56,6 +59,13 @@ Notes and code pieces to use for the exam
 
 ---
 - Explain the methods map, filter and reduce
+>The methods can be used to persist data, and get an altered array that has been modified on each of the elements of the original array. 
+>The map method alters each of the elements and returns an equally sized array, where as the filter method filters it by a boolean condition, and returns an array containing objects which are fulfilling the boolean condition.
+>The reduce method is used to accumulate list values into a single object, as shown in the example to count votes, and dynamically create an object for return containing the results.
+>Map: creating tables/UL, update all objects.
+>Filter: for filtering content in table, or UL.
+>Reduce: accumulation of values in single object, like the .join() function "under the hood"
+*Coding example: *
 
 ---
 - Provide examples of user defined reusable modules implemented in Node.js
