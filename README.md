@@ -101,3 +101,37 @@ Exam notes and code
 *Coding example: modules*
 
 ---
+
+##### ES6-7 and TypeScript
+---
+
+- Provide examples and explain the es2015 features: let, arrow functions, this, rest parameters, de-structuring assignments, maps/sets etc.
+>`let`: is the "goto" variable now, it is not hoisted, and has a block scope, to where is is declared.
+
+>`()=>`: is a simple way of creating a function on the fly, with lexical scoping.
+
+>`this`: is in coop with arrow func. cause it can some times cause problems.
+
+>`f(...rest)`: rest params, can be used if you dont know how many params you will get in a function.
+
+>deconstruction is usefull for splitting only the parts need from an object.
+
+>map like know from other languages is a key value pair
+
+>set a list of unique values, not limited to same datatype
+
+
+---
+- Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.
+
+---
+- Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.
+
+---
+- Provide examples with es6, running in a browser, using Babel and Webpack
+
+---
+- Provide an number of examples to demonstrate the benefits of using TypeScript, including, types, interfaces, classes and generics
+
+
+---
