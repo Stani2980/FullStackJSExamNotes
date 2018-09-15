@@ -30,7 +30,34 @@ Notes and code pieces to use for the exam
 
 >Babel is used when we want to transpile our JS code, into an older version. This is practical, because most modern browsers do not support the newest JS code, and we want our application to run in all browsers, and our development to be with the most modern tech. 
 >Webpack ([webpack guide](https://webpack.js.org/guides/getting-started/)), is a bundler or "packaging tool", webpack allows us to compress our codebase to be as small as possible, because then our .js file will be smaller, thus faster to download/upload. The bundler also shortens variablenames and removes all spaces, making the code humanly undreadable, but still understandable for the computer.
+*Coding example : BabelWebpack*
 ---
 - Explain the purpose of “use strict” and Linters, exemplified with ESLint 
-> 
+>Linting is the process of checking the source code for Programmatic as well as Stylistic errors. This is most helpful in identifying some common and uncommon mistakes that are made during coding. ESLint, helps developers, when coding by showing typing mistakes, and scoping errors and such, before runtime, and Throw them as errors or underline errors with red. This helps you to remember to define variables, and not trying to do things that are not possible, as setting a variable that is `readonly` to a new value. It also helps you to not use the reserved keywords of JS as variable names and such.
+
+---
+#### Explain using sufficient code examples the following features in JavaScript. 
+- Variable/function-Hoisting
+
+---
+- *this* in JavaScript and how it differs from what we know from Java/.net.
+
+---
+- Function Closures and the JavaScript Module Pattern
+
+---
+- Immediately-Invoked Function Expressions (IIFE)
+
+---
+- JavaScripts Prototype
+
+---
+- User defined Callback Functions (writing your own functions that takes a callback)
+
+---
+- Explain the methods map, filter and reduce
+
+---
+- Provide examples of user defined reusable modules implemented in Node.js
+
 ---
