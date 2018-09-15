@@ -44,18 +44,27 @@ Notes and code pieces to use for the exam
 
 ---
 - *this* in JavaScript and how it differs from what we know from Java/.net.
-
+>*this* mainly points to the global object in JS. Where as in Java it point to the instance of the current object in question. When making objects/classes *this* points to that class. If a property function of a class takes a callback, that callback has to be binded to the object's "this" or using a arrow function witch under the hood binds *this*. Lexical scoping used by arrow functions is defined by inner functions scoping. Which means arrow functions work in classes/object.
+*Coding example: this.js*
 ---
 - Function Closures and the JavaScript Module Pattern
+>The way that JavaScript works, we cannot make "real objects" thus we need to use closures. Functions enwraped in other functions have the scope pointing to their parent, thus we can "save" data that way inside an object.
+*Coding example: closures.js*
 
 ---
 - Immediately-Invoked Function Expressions (IIFE)
+>Functions that will be imideatly executed, thus the content wont be available in the global scope, and variables inside wont be hoisted.
+*Coding example: IIFE.js / closures_IIFE*
 
 ---
 - JavaScripts Prototype
+>Prototyping can be used to add new functions to existing Classes/Objects, such as Array or self made objects.
+*Coding example: prototypes.js*
 
 ---
 - User defined Callback Functions (writing your own functions that takes a callback)
+>Functional programming witch allows us to create functions that run other functions
+*Coding example: mapFilterReduce.js*
 
 ---
 - Explain the methods map, filter and reduce
@@ -65,9 +74,13 @@ Notes and code pieces to use for the exam
 >Map: creating tables/UL, update all objects.
 >Filter: for filtering content in table, or UL.
 >Reduce: accumulation of values in single object, like the .join() function "under the hood"
-*Coding example: *
+*Coding example: mapFilterReduce.js*
 
 ---
 - Provide examples of user defined reusable modules implemented in Node.js
+
+>We can split up our code in modules, making it easier to be multiple people working on a single project.
+
+*Coding example: modules*
 
 ---
