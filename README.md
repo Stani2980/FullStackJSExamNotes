@@ -146,6 +146,7 @@ Exam notes and code
 - Provide an number of examples to demonstrate the benefits of using TypeScript, including, types, interfaces, classes and generics
 
 >Benefits of TS, are that we have type defenitions, and that prevents some errors and, makes development easier, introducing interfaces like we know them from other languages. Also the ability to make generics.
+
 *Coding example: ts.ts*
 
 ---
