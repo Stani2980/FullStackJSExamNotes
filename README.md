@@ -120,18 +120,95 @@ Exam notes and code
 
 >set a list of unique values, not limited to same datatype
 
+*Coding example: ecmascript6Ex*
 
 ---
 - Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.
+>The syntax has changed, and we can now deconstruct the imports
+
+*Coding example: ecmascript6Ex*
 
 ---
 - Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.
+>Class Based vs Prototype Based. Java follows class based inheritance—a top down, hierarchical, class-based relationship whereby properties are defined in a class and inherited by an instance of that class (one of its members). In JavaScript, inheritance is prototypal—all objects can inherit directly from other objects. Hierarchy is accomplished in JavaScript by assigning an object as a prototype with a constructor function.
+
+*Coding example: ecmascript6Ex*
 
 ---
 - Provide examples with es6, running in a browser, using Babel and Webpack
 
+*Coding example: BabelWebpack*
+
+[running example (surge)](http://mundane-ant.surge.sh/)
+
 ---
+
 - Provide an number of examples to demonstrate the benefits of using TypeScript, including, types, interfaces, classes and generics
 
+>Benefits of TS, are that we have type defenitions, and that prevents some errors and, makes development easier, introducing interfaces like we know them from other languages. Also the ability to make generics.
+*Coding example: ts.ts*
 
 ---
+
+##### Callbacks, Promises and async/await
+
+- Explain about promises in ES-6 including, the problems they solve, a quick explanation of the Promise API and:
+>Promises solves the problem that JS is single threaded and reads from top to bottom. Promises give us responsiveness that we really want in webdevelopment. Helps with HTTP request cause these take time. These work with the webAPI and using the Event Loop.
+>Promises represents something that has to be resolved, but takes an uknown time to complete, then i either resolves to a result, or does not resolve and returns with an error.
+---
+
+- Example(s) that demonstrate how to avoid the callback hell  (“Pyramid of Doom")
+>The callback hell/ pyramid of doom is referenced to the "ugly" looking code that it produces then you create code with functions depending on async returns from other functions. The way to handle that is to "nest" functions, and the more you nest the bigger the pyramid gets...
+
+*Coding example: promises/pyramidOfDoomAndFix.js*
+
+---
+- Example(s) that demonstrate how to execute asynchronous (promise-based) code in serial or parallel
+>The Promise api, allows us to execute code in parallel, then recieve the result in the same order in an list, as it was intended, so as the fuc call, takes as long as the longest of the promises.
+
+*Coding example: promises/promisesSeqAndParallel.js*
+
+
+---
+- Example(s) that demonstrate how to implement our own promise-solutions.
+>We can create "callback" style solutions where we can implement our own "homebrewn" Promises.
+
+*Coding example: promises/promisesSeqAndParallel.js*
+
+---
+- Example(s) that demonstrate error handling with promises
+>Error handling is easier, since we need one error handling point (catch(err){...} block)
+
+*Coding example: promises/promiseFactory.js*
+
+---
+
+- Explain about JavaScripts async/await, how it relates to promises and reasons to use it compared to the plain promise API.
+>Async/await is built ontop of the Promise API, condsidered as "syntactic sugar". It is a way to make async code look and behave a bit more like synchronous code (can fool you some times). It makes code easier to debug and the syntax is similar to other languages with try{..}catch{..}
+
+- Provide examples to demonstrate 
+
+*Coding example: promises/pyramidOfDoomAndFix.js*
+
+---
+
+- Why this often is the preferred way of handling promises
+>Beacuse it is "easier" on the eyes, and as written above, more familier to developers that know real OOP languages.
+
+*Coding example: promises/pyramidOfDoomAndFix.js*
+
+---
+- Error handling with async/await
+>Error handling is more efficient as you can have only one try catch block like we are used to from other languages.
+
+*Coding example: promises/pyramidOfDoomAndFix.js*
+
+---
+
+- Serial or parallel execution with async/await.
+>Also easier implementation using the await keyword.
+
+*Coding example: promises/serialParallelAsyncAwait.js*
+
+---
+
