@@ -5,7 +5,6 @@ interface IBook {
     pages?: number;
 }
 
-// This is called "Duck typing", if the object created has the same props as the interface, it will "automatically" be considered a IBook
 let book: IBook = {
     title: "Nice Book",
     author: "Mr Author",
@@ -13,6 +12,7 @@ let book: IBook = {
     pages: 2000
 }
 
+// This is called "Duck typing", if the object created has the same props as the interface, it will "automatically" be considered a IBook
 let book2: IBook = {
     title: "Nice Book",
     author: "Mr Author",
