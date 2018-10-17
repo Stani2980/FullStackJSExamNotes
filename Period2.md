@@ -1,6 +1,6 @@
 # Period-2 Node.js, Express + JavaScript Backend Testing, NoSQL, MongoDB and Mongoose
 
-All of the below can use the [miniproject](https://github.com/Stani2980/miniProjectJS) as coding examples
+## *All of the below can use the [miniproject](https://github.com/Stani2980/miniProjectJS) as coding examples*
 
 
 - Why would you consider a Scripting Language as JavaScript as your Backend Platform?
