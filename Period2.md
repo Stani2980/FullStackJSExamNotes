@@ -62,33 +62,58 @@
     [miniproject](https://github.com/Stani2980/miniProjectJS) Code example
 
 - Explain, using relevant examples, different ways to mock out databases, HTTP-request etc.
-    > 
+    > We can do it as i have done, and use the hooks to remove all data from db, and reinstatiate it again before each test. Or we could use nock.js which overrites the Http request modules, and will only give us what we our selves programaticly have written as an response.
+
+    [miniproject](https://github.com/Stani2980/miniProjectJS) Code example
 
 ### NoSQL, MongoDB and Mongoose
 - Explain, generally, what is meant by a NoSQL database.
-    >
+    > It is a type of database that does not use all the rules of the traditional relational modelling of tables and databases. This kind of database cannot be queried with SQL. These databases use embedding of data and often consist of repeated data. NoSQL databases do not use fixed schema structures and SQL joins.
 
 - Explain Pros & Cons in using a NoSQL database like MongoDB as your data store, compared to a traditional Relational SQL Database like MySQL.
-    > 
+    > The performance of such databases can be much faster, because the database does not handle joins, as a traditional database does, which are very time consuming. Though you have to query multiple times to get "foreign keys", but this can also be fixed by embedding, then you will only query one document and get all the info you need. These types of databases are also really good at handling modern features as location markers, and much greater scaleability.
 
 - Explain reasons to add a layer like Mongoose, on top on of a schema-less database like MongoDB
-    > 
+    > The mongoose layer (ODM Object Document Mapper), gives us a type of "classical" schema, wich gives us some guidance in the code what an entity is built of. Mongoose also brings strongly types variables, so the data that we get and add to the database is consistent. It also allows us to query the database.
 
 #### These two topics will be introduced in period-3
 #### Explain about indexes in MongoDB, how to create them, and demonstrate how you have used them.
 #### Explain, using your own code examples, how you have used some of MongoDB's "special" indexes like TTL and 2dsphere
 
 - Demonstrate, using a REST-API you have designed, how to perform all CRUD operations on a MongoDB
-    > 
+    > Demonstration is in the code example below
+
+    [miniproject](https://github.com/Stani2980/miniProjectJS) Code example
 
 - Explain the benefits from using Mongoose, and demonstrate, using your own code, an example involving all CRUD operations
-    > 
+    > The mongoose layer (ODM Object Document Mapper), gives us a type of "classical" schema, wich gives us some guidance in the code what an entity is built of. Mongoose also brings strongly types variables, so the data that we get and add to the database is consistent. It also allows us to query the database.
+
+    [miniproject](https://github.com/Stani2980/miniProjectJS) Code example
 
 - Explain the “6 Rules of Thumb: Your Guide Through the Rainbow” as to how and when you would use normalization vs. denormalization.
-    > 
+    
+    - Favor embedding unless there is a compelling reason not to
+    - The need to access an object on its own, is a compelling reason not to embed it
+    - Arrays should not grow without bound. If there are more than a couple of
+    hundred documents on the “many” side, don’t embed them; if there are more
+    than a few thousand documents on the “many” side, don’t use an array of ObjectID references. High-cardinality arrays are a compelling reason not to
+    embed.
+    - Don’t be afraid of application-level joins: if you index correctly and use the
+    projection specier
+    (as shown in part 2) then application-level joins are barely more expensive than server-side joins in a relational database.
+    - Consider the write/read ratio when denormalizing. A eld
+    that will mostly be
+    read and only seldom updated is a good candidate for denormalization
+    - How you eventaully model your data depends – entirely – on your particular
+    application’s data access patterns.
+
 
 - Demonstrate, using your own code-samples, decisions you have made regarding → normalization vs denormalization 
-    > 
+    > Position and job example.
+    
+    [miniproject](https://github.com/Stani2980/miniProjectJS) Code example
 
 - Explain, using a relevant example, a full JavaScript backend including relevant test cases to test the REST-API (not on the production database)
     > 
+    
+    [miniproject](https://github.com/Stani2980/miniProjectJS) Code example
