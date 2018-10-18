@@ -15,16 +15,16 @@
 - Explain briefly how to deploy a Node/Express application including how to solve the following deployment problems:
 
     - Ensure that you Node-process restarts after a (potential) exception that closed the application
-        > 
+        > To ensure my application will work i would use PM2, a process manager that ensures that script is run when i restart server or the application crashes.
 
     - Ensure that you Node-process restarts after a server (Ubuntu) restart
-        > 
+        > To ensure my application will work i would use PM2, a process manager that ensures that script is run when i restart server or the application crashes.
 
     - Ensure that you can take advantage of a multi-core system
-        > 
+        > To ensure my application will work in a multicore system i could use the node native cluster module or i would use PM2, a process manager that creates the amount of processes my system can handle. 
 
     - Ensure that you can run “many” node-applications on a single droplet on the same port (80)
-        > 
+        > This i could configure with a loadbalancer, or using PM2.
 
 - Explain the difference between “Developer outputs” and application logging. What’s wrong with console.log(..) statements in our backend-code, 
     > Developer outputs, would be Stacktrace and technical stuff that the user/customer does not need or want to see. Where as application logging, would be som relevant logging of what is happening in our application, if an fatal error killed our application we want to know, and investigate and fix the bug. This could be done with debug.js library. The fault with the console.log() statements is, that they are not saved on the server, thus a server restart would delete them all. + it is more to use in the browser.
@@ -115,5 +115,5 @@
 
 - Explain, using a relevant example, a full JavaScript backend including relevant test cases to test the REST-API (not on the production database)
     > 
-    
+
     [miniproject](https://github.com/Stani2980/miniProjectJS) Code example
