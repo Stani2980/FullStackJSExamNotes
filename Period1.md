@@ -63,7 +63,7 @@
 
 ---
 - Immediately-Invoked Function Expressions (IIFE)
->Functions that will be imideatly executed, thus the content wont be available in the global scope, and variables inside wont be hoisted.
+>Functions that will be imideatly executed, thus the content wont be available in the global scope, and  inside wont be hoisted.
 
 *Coding example: IIFE.js / closures_IIFE*
 
