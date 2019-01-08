@@ -1,3 +1,5 @@
+//Run $tsc ts.ts to compile to ES5
+
 interface IBook {
     title: string;
     readonly author: string;

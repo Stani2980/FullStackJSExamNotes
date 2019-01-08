@@ -1,11 +1,11 @@
-module.exports = function f(x, y, ...rest) {
+// export default function f(x, y, ...rest) {
+function f(x, y, ...rest) {
     let res = "Sum: " + (x + y)
 
     res += rest.map((obj, index) => {
         return `\nRest value ${index + 1} is a: ${obj.constructor.name}`;
     }).join("")
     return res
-
 }
 
 
@@ -15,8 +15,8 @@ module.exports = function f(x, y, ...rest) {
 // var restParams = [...rest];
 // console.log(f(5, 2, ...restParams));
 
+
 // var chars = [...f(5, 2, ...restParams)]
 // console.log();
 // console.log(chars);
-
-// module.exports = resVal
+// module.export = f

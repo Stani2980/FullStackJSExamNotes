@@ -65,3 +65,22 @@ function cbReduce(accumulator, currVal, index, arr) {
 
 const res2 = numbers3.reduce(cbReduce);
 console.log(res2);
+
+
+// Array.prototype.myReduce = function(callback, initialVal) {
+//     var accumulator = (initialVal === undefined) ? undefined : initialVal;
+//     for (var i = 0; i < this.length; i++) {
+//         if (accumulator !== undefined)
+//             accumulator = callback.call(undefined, accumulator, this[i], i, this);
+//         else
+//             accumulator = this[i];
+//     }
+//     return accumulator;
+// };
+
+// //tests
+// var numbers3 = [20, 20, 2, 3];
+// var total = numbers3.myReduce(function(a, b) {
+//     return a + b;
+// }, 10);
+// console.log(total); // 55
